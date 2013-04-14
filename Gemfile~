@@ -5,10 +5,10 @@ require 'mongo'
 source 'http://gemcutter.org'
 
 gem 'rails', '3.2.13'
-gem "mongo_mapper"
 gem "mongoid", "~> 3.1.2"
 gem 'haml'
 gem 'haml-rails'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -40,6 +40,7 @@ group :test do
   gem "capybara", ">= 1.1.2"
   gem "database_cleaner"
   gem "ZenTest"
+  gem 'spork'
   gem "launchy"
 end
 

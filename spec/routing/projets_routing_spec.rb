@@ -3,6 +3,10 @@ require "spec_helper"
 describe ProjetsController do
   describe "routing" do
 
+    it "reroute accueil vers #index" do
+      get("/").should route_to("projets#index")
+    end
+
     it "routes to #index" do
       get("/projets").should route_to("projets#index")
     end

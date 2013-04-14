@@ -5,7 +5,6 @@ require 'mongo'
 source 'http://gemcutter.org'
 
 gem 'rails', '3.2.13'
-gem "mongo_mapper"
 gem "mongoid", "~> 3.1.2"
 gem 'haml'
 gem 'haml-rails'

@@ -1,5 +1,8 @@
 class Projet
-  include MongoMapper::Document
-
+  include Mongoid::Document
+  field :nom, type: String
+  field :ministere, type: String
+  field :date_de_fin_prevue, type: Date
+  field :montant, type: Float
 
 end

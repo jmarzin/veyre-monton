@@ -1,16 +1,23 @@
 %h1 Listing projets
 
-%table
-  %tr
-    %th
-    %th
-    %th
-
-  - @projets.each do |projet|
+%table#projets
+  %thead
     %tr
-      %td= link_to 'Show', projet
-      %td= link_to 'Edit', edit_projet_path(projet)
-      %td= link_to 'Destroy', projet, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %th Nom du projet
+      %th Ministère
+      %th Date de fin prévue
+      %th Montant (€)
+
+  %tbody
+    - @projets.each do |projet|
+      %tr
+        %td= projet.nom
+        %td= projet.ministere
+        %td= projet.date_de_fin_prevue
+        %td= projet.montant
+        %td= link_to 'Show', projet
+        %td= link_to 'Edit', edit_projet_path(projet)
+        %td= link_to 'Destroy', projet, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
