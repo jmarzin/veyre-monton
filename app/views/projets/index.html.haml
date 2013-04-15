@@ -13,11 +13,14 @@
       %tr
         %td= projet.nom
         %td= projet.ministere
+        %td= projet.date_de_lancement
         %td= projet.date_de_fin_prevue
         %td= projet.montant
-        %td= link_to 'Show', projet
-        %td= link_to 'Edit', edit_projet_path(projet)
-        %td= link_to 'Destroy', projet, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= projet.delta_duree
+        %td= projet.delta_montant
+        %td= link_to 'Voir', projet
+        %td= link_to 'Editer', edit_projet_path(projet)
+        %td= link_to 'Supprimer', projet, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 

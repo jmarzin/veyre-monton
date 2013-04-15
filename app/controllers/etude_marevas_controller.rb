@@ -1,0 +1,2 @@
+class EtudeMarevasController < ApplicationController
+end
